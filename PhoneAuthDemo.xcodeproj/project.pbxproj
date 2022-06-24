@@ -11,6 +11,12 @@
 		901AD6AA286591AB00DB488E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 901AD6A9286591AB00DB488E /* ContentView.swift */; };
 		901AD6AC286591AC00DB488E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 901AD6AB286591AC00DB488E /* Assets.xcassets */; };
 		901AD6AF286591AC00DB488E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 901AD6AE286591AC00DB488E /* Preview Assets.xcassets */; };
+		901AD6B6286591E700DB488E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 901AD6B5286591E700DB488E /* GoogleService-Info.plist */; };
+		901AD6BE2865952D00DB488E /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 901AD6BD2865952D00DB488E /* FirebaseAuth */; };
+		901AD6C02865952D00DB488E /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 901AD6BF2865952D00DB488E /* FirebaseFirestore */; };
+		901AD6C22865952D00DB488E /* FirebaseFirestoreSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = 901AD6C12865952D00DB488E /* FirebaseFirestoreSwift-Beta */; };
+		901AD6C42865952D00DB488E /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = 901AD6C32865952D00DB488E /* FirebaseMessaging */; };
+		901AD6C8286598A600DB488E /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 901AD6C7286598A600DB488E /* AuthViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +25,10 @@
 		901AD6A9286591AB00DB488E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		901AD6AB286591AC00DB488E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		901AD6AE286591AC00DB488E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		901AD6B5286591E700DB488E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		901AD6C52865955B00DB488E /* PhoneAuthDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PhoneAuthDemo.entitlements; sourceTree = "<group>"; };
+		901AD6C62865957100DB488E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		901AD6C7286598A600DB488E /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +36,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				901AD6C42865952D00DB488E /* FirebaseMessaging in Frameworks */,
+				901AD6C22865952D00DB488E /* FirebaseFirestoreSwift-Beta in Frameworks */,
+				901AD6BE2865952D00DB488E /* FirebaseAuth in Frameworks */,
+				901AD6C02865952D00DB488E /* FirebaseFirestore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,8 +65,12 @@
 		901AD6A6286591AB00DB488E /* PhoneAuthDemo */ = {
 			isa = PBXGroup;
 			children = (
+				901AD6C62865957100DB488E /* Info.plist */,
+				901AD6C52865955B00DB488E /* PhoneAuthDemo.entitlements */,
+				901AD6C7286598A600DB488E /* AuthViewModel.swift */,
 				901AD6A7286591AB00DB488E /* PhoneAuthDemoApp.swift */,
 				901AD6A9286591AB00DB488E /* ContentView.swift */,
+				901AD6B5286591E700DB488E /* GoogleService-Info.plist */,
 				901AD6AB286591AC00DB488E /* Assets.xcassets */,
 				901AD6AD286591AC00DB488E /* Preview Content */,
 			);
@@ -83,6 +101,12 @@
 			dependencies = (
 			);
 			name = PhoneAuthDemo;
+			packageProductDependencies = (
+				901AD6BD2865952D00DB488E /* FirebaseAuth */,
+				901AD6BF2865952D00DB488E /* FirebaseFirestore */,
+				901AD6C12865952D00DB488E /* FirebaseFirestoreSwift-Beta */,
+				901AD6C32865952D00DB488E /* FirebaseMessaging */,
+			);
 			productName = PhoneAuthDemo;
 			productReference = 901AD6A4286591AB00DB488E /* PhoneAuthDemo.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +135,9 @@
 				Base,
 			);
 			mainGroup = 901AD69B286591AB00DB488E;
+			packageReferences = (
+				901AD6BC2865952D00DB488E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = 901AD6A5286591AB00DB488E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -127,6 +154,7 @@
 			files = (
 				901AD6AF286591AC00DB488E /* Preview Assets.xcassets in Resources */,
 				901AD6AC286591AC00DB488E /* Assets.xcassets in Resources */,
+				901AD6B6286591E700DB488E /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,6 +167,7 @@
 			files = (
 				901AD6AA286591AB00DB488E /* ContentView.swift in Sources */,
 				901AD6A8286591AB00DB488E /* PhoneAuthDemoApp.swift in Sources */,
+				901AD6C8286598A600DB488E /* AuthViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,12 +295,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = PhoneAuthDemo/PhoneAuthDemo.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"PhoneAuthDemo/Preview Content\"";
 				DEVELOPMENT_TEAM = 8R29TH66V6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PhoneAuthDemo/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -296,12 +327,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = PhoneAuthDemo/PhoneAuthDemo.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"PhoneAuthDemo/Preview Content\"";
 				DEVELOPMENT_TEAM = 8R29TH66V6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PhoneAuthDemo/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -343,6 +376,40 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		901AD6BC2865952D00DB488E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		901AD6BD2865952D00DB488E /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 901AD6BC2865952D00DB488E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		901AD6BF2865952D00DB488E /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 901AD6BC2865952D00DB488E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		901AD6C12865952D00DB488E /* FirebaseFirestoreSwift-Beta */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 901AD6BC2865952D00DB488E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseFirestoreSwift-Beta";
+		};
+		901AD6C32865952D00DB488E /* FirebaseMessaging */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 901AD6BC2865952D00DB488E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseMessaging;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 901AD69C286591AB00DB488E /* Project object */;
 }
