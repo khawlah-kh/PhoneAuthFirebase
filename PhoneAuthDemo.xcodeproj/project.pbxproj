@@ -65,11 +65,11 @@
 		901AD6A6286591AB00DB488E /* PhoneAuthDemo */ = {
 			isa = PBXGroup;
 			children = (
+				901AD6A7286591AB00DB488E /* PhoneAuthDemoApp.swift */,
+				901AD6C7286598A600DB488E /* AuthViewModel.swift */,
+				901AD6A9286591AB00DB488E /* ContentView.swift */,
 				901AD6C62865957100DB488E /* Info.plist */,
 				901AD6C52865955B00DB488E /* PhoneAuthDemo.entitlements */,
-				901AD6C7286598A600DB488E /* AuthViewModel.swift */,
-				901AD6A7286591AB00DB488E /* PhoneAuthDemoApp.swift */,
-				901AD6A9286591AB00DB488E /* ContentView.swift */,
 				901AD6B5286591E700DB488E /* GoogleService-Info.plist */,
 				901AD6AB286591AC00DB488E /* Assets.xcassets */,
 				901AD6AD286591AC00DB488E /* Preview Content */,
